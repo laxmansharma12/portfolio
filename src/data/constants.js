@@ -2,7 +2,7 @@ export const Bio = {
 	name: "Laxman Sharma",
 	roles: ["Full Stack Developer", "Programmer"],
 	description:
-		"I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
+		"A motivated and versatile individual, always eager to work in an environment which encourages me to succeed and grow professionally where I can utilize my skills and knowledge appropriately. With a passion for learning, I am ready to make a meaningful contribution and achieve great things.",
 	github: "https://github.com/laxmansharma12",
 	resume:
 		"https://drive.google.com/file/d/1AsxEbXijKks2qmggguOezC4N_4-aKnwA/view?usp=drivesdk",
