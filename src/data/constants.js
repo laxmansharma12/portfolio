@@ -9,7 +9,6 @@ export const Bio = {
 	linkedin: "www.linkedin.com/in/laxman-sharma-b8ba53249",
 	twitter: "https://twitter.com/LaxmanS69086495",
 	insta: "https://www.instagram.com/laxmansharmawe/",
-	facebook: "https://www.facebook.com/profile.php?id=100010185074470",
 };
 
 export const skills = [

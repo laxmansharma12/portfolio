@@ -1,10 +1,10 @@
-import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
 import Typewriter from "typewriter-effect";
 import HeroImg from "../Images/laxman.jpg";
 import HeroBgAnimation from "../HeroBgAnimation";
-
+import React, { useRef, useState } from "react";
+import TextTransition, { presets } from "react-text-transition";
 const HeroContainer = styled.div`
 	background-color: ${({ theme }) => theme.card_light};
 	display: flex;
@@ -139,9 +139,10 @@ const Span = styled.span`
 	color: ${({ theme }) => theme.primary};
 	cursor: pointer;
 `;
+
 //--------------title animation style END---------------------------------
 
-// sun-title styles
+// sub-title styles
 const SubTitle = styled.div`
 	font-size: 20px;
 	line-height: 32px;
@@ -218,6 +219,11 @@ const Image = styled.img`
 `;
 
 const Hero = () => {
+	const [index, setIndex] = React.useState(0);
+	React.useEffect(() => {
+		const intervalId = setInterval(() => setIndex((index) => index + 1), 2150);
+		return () => clearTimeout(intervalId);
+	}, []);
 	return (
 		<div id="about">
 			<HeroContainer>
@@ -232,13 +238,9 @@ const Hero = () => {
 						<TextLoop>
 							I am a
 							<Span>
-								<Typewriter
-									options={{
-										strings: Bio.roles,
-										autoStart: true,
-										loop: true,
-									}}
-								/>
+								<TextTransition springConfig={presets.wobbly}>
+									{Bio.roles[index % Bio.roles.length]}
+								</TextTransition>
 							</Span>
 						</TextLoop>
 						<SubTitle>{Bio.description}</SubTitle>
