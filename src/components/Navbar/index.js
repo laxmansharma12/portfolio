@@ -144,20 +144,20 @@ const GithubButton = styled.a`
 const MobileMenuLinks = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 16px;
   position: absolute;
   top: 60px;
   right: 0;
-  width: 100%;
-  padding: 12px 40px 24px 40px;  
+  width: 46%;
+  padding: 12px 40px 24px 20px;  
   background-color: ${({ theme }) => theme.tnc};
-  transition: all 3s ease-in-out;
-  transform: ${({ open }) => (open ? "translateY(0)" : "translateY(100%)")};
   border-radius: 0 0 20px 20px;
   box-shadow: 0 5 10px  rgba(0, 0, 0, 0.3;
   opacity: ${({ open }) => (open ? "1" : "0")};
   z-index: ${({ open }) => (open ? "1" : "-1")};
+  GithubButton{
+	margin-right:10px;
+  }
 `;
 
 //mobile view styles
@@ -167,6 +167,7 @@ export const MobileLink = styled.a`
 	cursor: pointer;
 	transition: all 0.2s ease-in-out;
 	text-decoration: none;
+	padding-left: 20px;
 	:hover {
 		color: ${({ theme }) => theme.primary};
 	}
