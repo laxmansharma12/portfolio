@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import styled, { useTheme } from "styled-components";
 import { Link as LinkR } from "react-router-dom";
 import { IoDocument } from "react-icons/io5";
@@ -178,7 +178,21 @@ export const MobileLink = styled.a`
 
 const Navbar = () => {
 	const [Open, setOpen] = React.useState(false);
+	const navHide = useRef();
 	const theme = useTheme();
+
+	useEffect(() => {
+		const handleClickOutside = (event) => {
+			if (navHide.current && !navHide.current.contains(event.target)) {
+				setOpen(!Open);
+			}
+		};
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	});
+
 	return (
 		<Nav>
 			<NavContainer>
@@ -209,7 +223,7 @@ const Navbar = () => {
 				</ButtonContainer>
 			</NavContainer>
 			{Open && (
-				<MobileMenuLinks open={Open}>
+				<MobileMenuLinks open={Open} ref={navHide}>
 					<MobileLink
 						href="#about"
 						onClick={() => {

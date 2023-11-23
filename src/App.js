@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { BrowserRouter } from "react-router-dom";
 import Experience from "./components/Experience";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Projects from "./components/Projects";
 import ProjectDetails from "./components/ProjectDetails";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
@@ -74,6 +74,10 @@ function App() {
 	const [darkMode, setDarkMode] = useState(false);
 	const [mode, setMode] = useState("light");
 	const [openModal, setOpenModal] = useState({ state: false, project: null });
+	const styles1 = {
+		transform: `translate(-70px,0)`,
+	};
+	const [transform, setTransform] = useState();
 
 	const Mode = () => {
 		if (mode === "light") {
@@ -87,7 +91,7 @@ function App() {
 	};
 	return (
 		<>
-			<Theme>
+			<Theme style={transform}>
 				<div className="themeControls">
 					<p
 						style={{
@@ -126,7 +130,12 @@ function App() {
 						)}
 					</div>
 				</div>
-				<div className="themeControlsArrow">
+				<div
+					className="themeControlsArrow"
+					onClick={() => {
+						setTransform(styles1);
+					}}
+				>
 					<KeyboardDoubleArrowRightIcon sx={{ fontSize: 40 }} />
 				</div>
 			</Theme>
