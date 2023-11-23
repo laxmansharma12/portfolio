@@ -1,7 +1,7 @@
 import React from "react";
 import styled, { useTheme } from "styled-components";
 import { Link as LinkR } from "react-router-dom";
-import { DiCssdeck } from "react-icons/di";
+import { IoDocument } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 
@@ -33,7 +33,7 @@ const NavContainer = styled.div`
 //---------------logo styles START--------------
 const NavLogo = styled(LinkR)`
 	width: 80%;
-	padding: 0 6px;
+	padding: 0 0 0 10px;
 	display: flex;
 	justify-content: start;
 	cursor: pointer;
@@ -147,12 +147,12 @@ const MobileMenuLinks = styled.div`
   justify-content: center;
   gap: 16px;
   position: absolute;
-  top: 80px;
+  top: 60px;
   right: 0;
   width: 100%;
-  padding: 12px 40px 24px 40px;
-  background: ${({ theme }) => theme.card_light + 99};
-  transition: all 0.3s ease-in-out;
+  padding: 12px 40px 24px 40px;  
+  background-color: ${({ theme }) => theme.tnc};
+  transition: all 3s ease-in-out;
   transform: ${({ open }) => (open ? "translateY(0)" : "translateY(100%)")};
   border-radius: 0 0 20px 20px;
   box-shadow: 0 5 10px  rgba(0, 0, 0, 0.3;
@@ -184,7 +184,7 @@ const Navbar = () => {
 			<NavContainer>
 				<NavLogo to="/">
 					<A>
-						<DiCssdeck size="3rem" /> <Span>Portfolio</Span>
+						<IoDocument size="2rem" /> <Span>Portfolio</Span>
 					</A>
 				</NavLogo>
 				<MobileIcon>
@@ -200,6 +200,7 @@ const Navbar = () => {
 					<NavLink href="#experience">Experience</NavLink>
 					<NavLink href="#projects">Projects</NavLink>
 					<NavLink href="#education">Education</NavLink>
+					<NavLink href="#contact">Contact</NavLink>
 				</NavItems>
 				<ButtonContainer>
 					<GithubButton href={Bio.github} target="_blank">
@@ -248,6 +249,14 @@ const Navbar = () => {
 						}}
 					>
 						Education
+					</MobileLink>
+					<MobileLink
+						href="#contact"
+						onClick={() => {
+							setOpen(!Open);
+						}}
+					>
+						Contact
 					</MobileLink>
 					<GithubButton
 						style={{
