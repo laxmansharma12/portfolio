@@ -9,7 +9,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { BrowserRouter } from "react-router-dom";
 import Experience from "./components/Experience";
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Projects from "./components/Projects";
 import ProjectDetails from "./components/ProjectDetails";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
