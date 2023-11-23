@@ -6,8 +6,8 @@ import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 
 const Nav = styled.div`
-	background-color: ${({ theme }) => theme.card_light};
-	height: 80px;
+	background-color: ${({ theme }) => theme.tnc};
+	height: 60px;
 	display: flex;
 	justify-content: center;
 	align-item: center;
@@ -43,11 +43,21 @@ const NavLogo = styled(LinkR)`
 		padding: 0 0px;
 	}
 `;
+const A = styled.a`
+	display: flex;
+	alignitems: center;
+	color: ${({ theme }) => theme.text_primary};
+	marginbottom: 20;
+	cursor: pointer;
+`;
 // logo text
 const Span = styled.div`
 	padding: 0 4px;
 	font-weight: bold;
 	font-size: 18px;
+	text-align: center;
+	margin: auto;
+	color: ${({ theme }) => theme.text_primary};
 `;
 //---------------logo styles END--------------
 
@@ -173,17 +183,9 @@ const Navbar = () => {
 		<Nav>
 			<NavContainer>
 				<NavLogo to="/">
-					<a
-						style={{
-							display: "flex",
-							alignItems: "center",
-							color: "white",
-							marginBottom: "20;",
-							cursor: "pointer",
-						}}
-					>
+					<A>
 						<DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-					</a>
+					</A>
 				</NavLogo>
 				<MobileIcon>
 					<FaBars

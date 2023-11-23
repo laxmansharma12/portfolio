@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import { Bio } from "../../data/constants";
-import Typewriter from "typewriter-effect";
-import HeroImg from "../Images/laxman.jpg";
-import HeroBgAnimation from "../HeroBgAnimation";
-import React, { useRef, useState } from "react";
+import HeroImg from "../Images/laxman1.jpg";
+import React from "react";
 import TextTransition, { presets } from "react-text-transition";
+
 const HeroContainer = styled.div`
 	background-color: ${({ theme }) => theme.card_light};
 	display: flex;
@@ -22,28 +21,6 @@ const HeroContainer = styled.div`
 
 	z-index: 1;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 95%, 0 100%);
-`;
-
-//hero bg animation
-const HeroBg = styled.div`
-	position: absolute;
-	display: flex;
-	justify-content: end;
-	top: 50%;
-	right: 0;
-	bottom: 0;
-	left: 63.5%;
-	width: 73%; //for bgAnimation position
-	height: 100%;
-	overflow: hidden;
-	padding: 0 30px;
-	-webkit-transform: translateX(-50%) translateY(-50%);
-	transform: translateX(-50%) translateY(-50%);
-
-	@media (max-width: 960px) {
-		justify-content: center;
-		padding: 0 0px;
-	}
 `;
 
 // HeroLeftContainer and HeroRightContainer styles
@@ -166,21 +143,18 @@ const ResumeButton = styled.a`
     appearance: button;
     text-decoration: none;
     width: 95%;
-    max-width: 300px;
+    max-width: 200px;
     text-align: center;
     padding: 16px 0;
-    color:${({ theme }) => theme.white};
+    color: ${({ theme }) => theme.resumeBtnTextColor};
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
     font-weight: 600;
     transition: all 0.2s ease-in-out !important;
-    background: hsla(271, 100%, 50%, 1);
-    background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-    box-shadow:  20px 20px 60px #1F2634,
-    -20px -20px 60px #1F2634;
+	background: ${({ theme }) => theme.gradient1};
+	
+   margin-right:10px;
     &:hover {
         transform: scale(1.05);
     transition: all 0.4s ease-in-out;
@@ -191,10 +165,42 @@ const ResumeButton = styled.a`
     
     @media (max-width: 640px) {
         padding: 12px 0;
+		margin-right:0;
         font-size: 18px;
     } 
 
 `;
+const ContactMeButton = styled.a`
+-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    width: 95%;
+    max-width: 200px;
+    text-align: center;
+    padding: 14px 0;
+    color: ${({ theme }) => theme.gradient1};
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out !important;
+    background: transperent;
+	border: 2px solid ${({ theme }) => theme.contactBtnBorder};
+   
+    &:hover {
+        transform: scale(1.05);
+    transition: all 0.4s ease-in-out;
+    box-shadow:  20px 20px 60px black,
+    filter: brightness(1);
+    }    
+    
+    
+    @media (max-width: 640px) {
+        padding: 12px 0;
+		margin-top:10px;
+        font-size: 18px;
+    }`;
 
 //---------------dp image styles------------------------------
 const Image = styled.img`
@@ -203,10 +209,10 @@ const Image = styled.img`
 	height: 100%;
 	max-width: 400px;
 	max-height: 400px;
-	border-radius: 50%;
 	object-position: center;
-	border: 2px solid ${({ theme }) => theme.primary};
-
+	background-repeat: no-repeat;
+	box-shadow: 10px 10px 20px #1f2634, -10px -10px 20px #1f2634;
+	animation: profile_animate 8s ease-in-out infinite 1s;
 	@media (max-width: 768px) {
 		max-width: 400px;
 		max-height: 400px;
@@ -215,6 +221,18 @@ const Image = styled.img`
 	@media (max-width: 640px) {
 		max-width: 280px;
 		max-height: 280px;
+	}
+
+	@keyframes profile_animate {
+		0% {
+			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+		}
+		50% {
+			border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+		}
+		100% {
+			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+		}
 	}
 `;
 
@@ -227,9 +245,6 @@ const Hero = () => {
 	return (
 		<div id="about">
 			<HeroContainer>
-				<HeroBg>
-					<HeroBgAnimation />
-				</HeroBg>
 				<HeroInnerContainer>
 					<HeroLeftContainer>
 						<Title>
@@ -247,6 +262,7 @@ const Hero = () => {
 						<ResumeButton href={Bio.resume} target="display">
 							Check Resume
 						</ResumeButton>
+						<ContactMeButton href="#contact">Contact Me</ContactMeButton>
 					</HeroLeftContainer>
 					<HeroRightContainer>
 						<Image src={HeroImg} alt="heroImg" />
