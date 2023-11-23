@@ -15,6 +15,7 @@ import ProjectDetails from "./components/ProjectDetails";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
+import { useEffect } from "react";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -74,11 +75,13 @@ function App() {
 	const [darkMode, setDarkMode] = useState(false);
 	const [mode, setMode] = useState("light");
 	const [openModal, setOpenModal] = useState({ state: false, project: null });
-	const styles1 = {
-		transform: `translate(-70px,0)`,
+	const black = {
+		color: `black`,
 	};
-	const [transform, setTransform] = useState();
-
+	const white = {
+		color: `white`,
+	};
+	const [themeToggler, setThemeToggler] = useState();
 	const Mode = () => {
 		if (mode === "light") {
 			setMode("dark");
@@ -89,17 +92,19 @@ function App() {
 			setMode("light");
 		}
 	};
+	useEffect(() => {
+		if (mode === "light") {
+			setThemeToggler(black);
+		}
+		if (mode === "dark") {
+			setThemeToggler(white);
+		}
+	});
 	return (
 		<>
-			<Theme style={transform}>
+			<Theme>
 				<div className="themeControls">
-					<p
-						style={{
-							color: "${({ theme }) => theme.primary}",
-						}}
-					>
-						Theme
-					</p>
+					<p>Theme</p>
 					<hr></hr>
 					<div style={{ paddingTop: "5px" }}>
 						{mode === "light" ? (
@@ -116,7 +121,6 @@ function App() {
 								{mode === "dark" ? (
 									<>
 										<LightModeIcon
-											// style={{ color: "white" }}
 											onClick={() => {
 												Mode();
 											}}
@@ -130,12 +134,7 @@ function App() {
 						)}
 					</div>
 				</div>
-				<div
-					className="themeControlsArrow"
-					onClick={() => {
-						setTransform(styles1);
-					}}
-				>
+				<div className="themeControlsArrow" style={themeToggler}>
 					<KeyboardDoubleArrowRightIcon sx={{ fontSize: 40 }} />
 				</div>
 			</Theme>
