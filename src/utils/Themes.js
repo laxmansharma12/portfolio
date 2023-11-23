@@ -20,6 +20,7 @@ export const lightTheme = {
 	bg: "#FFFFFF",
 	bgLight: "#f0f0f0",
 	primary: "#be1adb",
+	white: "#FFFFFF",
 	tnc: "#ffffff",
 	text_primary: "#111111",
 	text_secondary: "#48494a",
