@@ -179,12 +179,17 @@ export const MobileLink = styled.a`
 const Navbar = () => {
 	const [Open, setOpen] = React.useState(false);
 	const navHide = useRef();
+	const mobileIcon = useRef();
 	const theme = useTheme();
 
 	useEffect(() => {
 		const handleClickOutside = (event) => {
-			if (navHide.current && !navHide.current.contains(event.target)) {
-				setOpen(!Open);
+			if (
+				navHide.current &&
+				!navHide.current.contains(event.target) &&
+				!mobileIcon.current.contains(event.target)
+			) {
+				setOpen(false);
 			}
 		};
 		document.addEventListener("mousedown", handleClickOutside);
@@ -201,7 +206,7 @@ const Navbar = () => {
 						<IoDocument size="2rem" /> <Span>Portfolio</Span>
 					</A>
 				</NavLogo>
-				<MobileIcon>
+				<MobileIcon ref={mobileIcon}>
 					<FaBars
 						onClick={() => {
 							setOpen(!Open);

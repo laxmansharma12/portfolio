@@ -65,6 +65,9 @@ const Theme = styled.div`
 		border-top-right-radius: 50%;
 		border-bottom-right-radius: 50%;
 		box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+		@media (max-width: 640px) {
+			font-size: 25px;
+		}
 	}
 	:hover {
 		transform: translate(70px, 0);
@@ -136,7 +139,7 @@ function App() {
 					</div>
 				</div>
 				<div className="themeControlsArrow" style={themeToggler}>
-					<KeyboardDoubleArrowRightIcon sx={{ fontSize: 40 }} />
+					<KeyboardDoubleArrowRightIcon sx={{ fontSize: 30 }} />
 				</div>
 			</Theme>
 			<ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
