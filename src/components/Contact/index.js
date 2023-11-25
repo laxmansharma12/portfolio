@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import { Snackbar } from "@mui/material";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHub from "@mui/icons-material/GitHub";
+import { Bio } from "../../data/constants";
 
 const Container = styled.div`
 	display: flex;
@@ -11,6 +15,12 @@ const Container = styled.div`
 	position: relative;
 	z-index: 1;
 	align-items: center;
+	background-color: ${({ theme }) => theme.card};
+	box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+	padding: 0px 30px;
+	@media screen and (max-width: 640px) {
+		padding: 0 16px;
+	}
 	@media (max-width: 960px) {
 		padding: 0px;
 	}
@@ -19,15 +29,18 @@ const Container = styled.div`
 const Wrapper = styled.div`
 	position: relative;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
-	flex-direction: column;
+	flex-direction: row;
 	width: 100%;
 	max-width: 1350px;
 	padding: 0px 0px 80px 0px;
-	gap: 12px;
-	@media (max-width: 960px) {
+	gap: 100px;
+	color: ${({ theme }) => theme.text_primary};
+	// border-radius: 16px;
+	@media (max-width: 768px) {
 		flex-direction: column;
+		gap: 10px;
 	}
 `;
 
@@ -44,13 +57,23 @@ const Title = styled.div`
 `;
 
 const Desc = styled.div`
-	font-size: 18px;
-	text-align: center;
-	max-width: 600px;
+	font-size: 16px;
+	max-width: 500px;
 	color: ${({ theme }) => theme.text_secondary};
 	@media (max-width: 768px) {
-		margin-top: 12px;
 		font-size: 16px;
+	}
+`;
+const DescForm = styled.form`
+	width: 95%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	margin-top: 28px;
+	@media (max-width: 768px) {
+		margin-top: 20px;
+		font-size: 16px;
+		padding: 0 32px;
 	}
 `;
 
@@ -59,19 +82,14 @@ const ContactForm = styled.form`
 	max-width: 600px;
 	display: flex;
 	flex-direction: column;
-	background-color: ${({ theme }) => theme.card};
 	padding: 32px;
 	border-radius: 16px;
 	box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 	margin-top: 28px;
 	gap: 12px;
-`;
-
-const ContactTitle = styled.div`
-	font-size: 24px;
-	margin-bottom: 6px;
-	font-weight: 600;
-	color: ${({ theme }) => theme.text_primary};
+	@media (max-width: 768px) {
+		margin-top: 0px;
+	}
 `;
 
 const ContactInput = styled.input`
@@ -106,29 +124,29 @@ const ContactButton = styled.input`
 	width: 100%;
 	text-decoration: none;
 	text-align: center;
-	background: hsla(271, 100%, 50%, 1);
-	background: linear-gradient(
-		225deg,
-		hsla(271, 100%, 50%, 1) 0%,
-		hsla(294, 100%, 50%, 1) 100%
-	);
-	background: -moz-linear-gradient(
-		225deg,
-		hsla(271, 100%, 50%, 1) 0%,
-		hsla(294, 100%, 50%, 1) 100%
-	);
-	background: -webkit-linear-gradient(
-		225deg,
-		hsla(271, 100%, 50%, 1) 0%,
-		hsla(294, 100%, 50%, 1) 100%
-	);
+	background: ${({ theme }) => theme.gradient1};
 	padding: 13px 16px;
 	margin-top: 2px;
 	border-radius: 12px;
 	border: none;
-	color: ${({ theme }) => theme.text_primary};
+	color: ${({ theme }) => theme.resumeBtnTextColor};
 	font-size: 18px;
 	font-weight: 600;
+`;
+const SocialMediaIcons = styled.div`
+	display: flex;
+	margin-top: 0.5rem;
+`;
+
+const SocialMediaIcon = styled.a`
+	display: inline-block;
+	margin: 0 0.5rem;
+	font-size: 1.5rem;
+	color: ${({ theme }) => theme.text_primary};
+	transition: color 0.2s ease-in-out;
+	&:hover {
+		color: ${({ theme }) => theme.primary};
+	}
 `;
 
 const Contact = () => {
@@ -158,16 +176,36 @@ const Contact = () => {
 
 	return (
 		<Container id="contact">
+			<Title>Contact</Title>
 			<Wrapper>
-				<Title>Contact</Title>
-				<Desc>
-					Feel free to reach out to me for any questions or opportunities!
-				</Desc>
+				<DescForm>
+					<h2>Let's Connect</h2>
+					<Desc>
+						I'm currently looking for new opportunities, my inbox is always
+						open. Whether you have a question or just want to say hi, I'll try
+						my best to get back to you!
+					</Desc>
+					<SocialMediaIcons>
+						<SocialMediaIcon href={Bio.github} target="display">
+							<GitHub />
+						</SocialMediaIcon>
+						<SocialMediaIcon href={Bio.twitter} target="display">
+							<TwitterIcon />
+						</SocialMediaIcon>
+						<SocialMediaIcon href={Bio.linkedin} target="display">
+							<LinkedInIcon />
+						</SocialMediaIcon>
+					</SocialMediaIcons>
+				</DescForm>
 				<ContactForm ref={form} onSubmit={handleSubmit}>
-					<ContactTitle>Email Me 🚀</ContactTitle>
-					<ContactInput placeholder="Your Email" name="from_email" />
-					<ContactInput placeholder="Your Name" name="from_name" />
-					<ContactInput placeholder="Subject" name="subject" />
+					<ContactInput
+						placeholder="Your Email"
+						name="from_email"
+						required
+						type="email"
+					/>
+					<ContactInput placeholder="Your Name" name="from_name" required />
+					<ContactInput placeholder="Subject" name="subject" required />
 					<ContactInputMessage placeholder="Message" rows="4" name="message" />
 					<ContactButton type="submit" value="Send" />
 				</ContactForm>

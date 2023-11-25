@@ -15,7 +15,6 @@ import ProjectDetails from "./components/ProjectDetails";
 import DarkModeIcon from "@mui/icons-material/DarkMode";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
-import { useEffect } from "react";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -92,14 +91,14 @@ function App() {
 			setMode("light");
 		}
 	};
-	useEffect(() => {
+	const setthemetoggler = () => {
 		if (mode === "light") {
-			setThemeToggler(black);
-		}
-		if (mode === "dark") {
 			setThemeToggler(white);
 		}
-	});
+		if (mode === "dark") {
+			setThemeToggler(black);
+		}
+	};
 	return (
 		<>
 			<Theme>
@@ -112,6 +111,7 @@ function App() {
 								<DarkModeIcon
 									onClick={() => {
 										Mode();
+										setthemetoggler();
 									}}
 								/>
 								<p>Dark</p>
@@ -123,6 +123,7 @@ function App() {
 										<LightModeIcon
 											onClick={() => {
 												Mode();
+												setthemetoggler();
 											}}
 										/>
 										<p>Light</p>
