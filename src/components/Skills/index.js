@@ -86,7 +86,7 @@ const SkillList = styled.div`
 	justify-content: center;
 	flex-wrap: wrap;
 	gap: 12px;
-	margin-bottom: 20px;
+	margin: 20px 0 20px 0;
 `;
 
 const SkillItem = styled.div`
@@ -131,6 +131,7 @@ const Skills = () => {
 					{skills.map((item) => (
 						<Skill>
 							<SkillTitle>{item.title}</SkillTitle>
+							<hr></hr>
 							<SkillList>
 								{item.skills.map((skill) => (
 									<SkillItem>

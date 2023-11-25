@@ -146,8 +146,8 @@ export const skills = [
 export const experiences = [
 	{
 		id: 0,
-		img: "https://github.com/laxmansharma12/Butterfly-Interiors-vercel-/blob/main/client/src/components/Layout/images/butterfly.png?raw=true",
-		role: "Butterfly Interiors (FullStack Web Application Freelance)",
+		img: "https://github.com/laxmansharma12/assets/blob/main/portfolio/freelance-logo.png?raw=true",
+		role: "FullStack Web Application Freelancer",
 		// company: "Flipr Inovations Pvt. Ltd.",
 		date: "May 2023 - Aug 2023",
 		desc: "As a freelance web designer, I've developed Butterfly Interiors project for a client, infusing creativity and functionality into digital spaces.",
@@ -168,7 +168,7 @@ export const experiences = [
 export const education = [
 	{
 		id: 0,
-		img: "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBQSEg8UFBUPEBgPEg8SEhIQEREPDxUPGBQZGRgUGBgcIS4lHB4rHxgYJjgmKy8xNTU1GiQ7QDszPy40NTEBDAwMEA8QHBISETEdGB0xMTExMTExNDExNDQ0ND80MTE0MTE0NDQ0ND8xMTQxMTQ/MTQ0PzQ/MT8/NDE/NDQ0Mf/AABEIANIAyAMBIgACEQEDEQH/xAAcAAACAgMBAQAAAAAAAAAAAAAABQQGAgMHAQj/xABEEAABAwMBBQQGBwUIAQUAAAACAAEDBBESBQYTISIyMUFCUlFhYnFygQcUI4KRkrEVJDOh0RY0Y6KywfDx4RdDRFNU/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwUE/8QAJREAAwEAAwACAgICAwAAAAAAAAECEQMSIQQxMkFRYSJCExRS/9oADAMBAAIRAxEAPwDsyEIQAhCEAIQhACEIQAhLtT1WKmDKQregW4mRehmSP67W1f8AAD6rH3SSteZ/cHFkBZZZxBrkQi3e5Elk20tKD2eUL97Dz/oosWy8XE5zmqDtdyKSQR/Iz2W2njohwEAp3c3JgfACd8fW7KHSRKTf0H9rKTzn791Jb9Fvh2kpTezTR39BPh+qwgqKY5ThEI842uQvGGP6KNIVAcm5cIM+zljEeb4mbtUdkT1Y+inE2uJCXwutyrEmzcbG708stOY+iQ5Rb7hPZa21Gspf7xHvw75Yf4nxEHBhUplcLYhQdP1COoBjiJibvt2s/ldTlIBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAVe1nXMD3EA76cuwB4iA+Y37B+aNf1YgIKaBs55m5X8IB3yP7u1eUOnjQwyHzSyY5SG/EzL+ihvCUtNVJoYx3qKot/IIkREX8MPFyCtb7WR76EB4xy8GkbpY/K/lUvSdUGridiZmIxK4eUfWqjHs+bynEIvYD4t0iwFzCTLG6r7k1iZ/2GMeqlDXThId45yFmYn6CLL+SUUoHDIBNc4wnPp44kQ5CrG2kwU7HJVyAZEOOR8th9XrSes+kLT4WcYg3vHizCOL48uSmeG7JdTP0ZULSjWSzMBs0+8ESxLiXhRpUmMgCwXcDkkmIhITDl6rqD/6sRX/ALvw7nupdD9JFDI5NIG63jYkVh4/E6u/jWvSP+T+iXo0zMVTWS3xyN4yY+QhIshGykaZtW5WGYblNIQxiA5Ewe12rOm06lqImankuI5E0eeQ593KlJUZUZuZjcxbCIn6TkJY12hkrrRYazQ7G89GTQyjxIGe8R+ybdzqXouuNM7xSDuZg6oz7/aD0sq7SVT0Me9mcynnIrxZkQkRdhMPhTrUKEKwWkjLCeBhcDDqEurB/UtYtPwzqHPv6LMhItB1Z5bxSthPDyyB6fbb1Onq0KAhCEAIQhACEIQAhCEAIQhACVa7qg00Tn1EXLGDdRm/YLJk72a7++6qtCH12rOcuMVI+EIv0nJ4pPk+bKATtnNLKITll5pp3ykLy+gB9TJDUzznUziU24OPmjjN7RHGmGv6tLBMBsJHCIEx4YuTn61ItTVzCxYuYiJPjlmGXhyZY0+3iNJTn/Ji/Zmmd5PrETAATZDOFuyYeogf0XUTbPb+OkyigxkltYn7QBQdu9qAoY/qdLwPGxkPgFcgM3J3Inu5PdyJ8ide343xnS2vorT7PSXqmqTVR5zGUj34MT8o+5QrodWzR9Gj+qPUS4YC/OTvzCWWK6KmIXiBU072X0wJjnkm4Q0oEUhM9rljyiyNV0RxIDg+1jkwdiHpHL0p7tZRNQUEFOD8Z3GSYm6j9lRTTxIgqNHXnDI8kBnFzXHF+bHykuobMbcw1YhT1whnysEjtyOfh+F1yZef9s7dyz5fjzU/2Sdw1vRJM4sHzKQhtKT8kUI+j5L2CQ45AioRzaN71Bu9hP08ewiVf2C2vKWN6Gc+chIIZCfty5RF3V90emakjwMguTkTY+Jcm+FxXpoqbnGa9oNPMmCpgG09O2WPnDxRumej6iFTEMg+JrEL9Qn3i6VaZrM80t939iRGAkz8zYlbJ1oNvqNYxNwgrisbdwVGPV8+VlaaTXhnUtP0tyF4zr1WKghCEAIQhACEIQAhC8d0Ag2qrXCFow66o2hjZupsuBF8lk0IU9MFOJjGZhiDu/M8hcxF+KhQfvOomT8QoxKNmfp3hZCTrVrxQVEuDynBLHwjJ24Pl6FS6yS0rX6Id4cING2cZxleQbE4zmSb6pWQ6ZRyTiAxnOI2HxPIQ+he6FFPvmhMopAhYnc2bMzy6bk7cvyXOfpO1z6zV7sX5IOVm8OfiU/F4u9Gl1/qVKrqjlkOQyzOQiIifvyXjwHfHA72uzYlxFb9KdmmAiYTEHyIS6SEfCm8+vlNMbMAAHKLYiOQeHJdqV1XVGYlLT52HPdSY95MBPb+Suex708NPhVZmNYVhiZ+QR82Nu1LR1euoCyyjnj7GEgFwL38Lq3w6AGox01ZALQvfIwIuRvaBY8l+Y/ogiU2gSUlWeB3oxbfCDPlkXUMdkh2qlKfen9s53GwFkQDzY4iNlaqzS6uGSUw3kgm92EMTFvcxJVvio2OWfduZsQxQM2chmXKJE1rCqzWLQY7KfRt9ZDezmQZdgA+JClG2+yQac4OEue8ezAT3NvaV6odXmoKakAxA5akt7M5lYIwPme9uKr22Oz0tY89ZHUR1ODDeMHLlD2eCrPJTvW/Ac9jMgJiF7EL3Ym7iXadmq+LVqRmm/iU3A8XxN8R6lxP/p29CsWw2svR1gFfkkfCRvDzK3yeJVPYlPHqOnabSSzRm4TFShGRDGIPjfErZGnBQtWUkkRGEpg13IO6YCzBK9oQEJAbKRxmbIIYWERMvW/B1t2ZOcTD7MIoicmcWLIxLHqdy4rkJ9aw1pdp0dbNV7zQBn1xuUUjP27wOVy+aeKqQ/u2omPYFYIkLN2bwcRf8XVrW5gCEIQAhCEAIQhACjV1QMcZmXYAu7qSq7tlL+7btu2pIY2/VAa9lYSjpGkLrmYpTcn5c8fElNXqbSMYzwBNjlYoSGUvZ6WdP9bpr0rQiWBEIjG17ZE3hVVKmP7MAgOGYCEcmMt2WPUT8ea/uWHI3uI1hLNZKjkGi02ebEgKQTsxPztkPKuISG5kZv2mRE7/ABLrP0v6g4QU0F+JvkbN7K5Gy6nw4Uz2KU9em2nk3ZgflIb/AAp5RUZjIb4cJByYnbl5lXSV02SqBmnBzP8AhhxE35XHpXstvNINVfEMcdKGeeb4SX6Xy5U32Z02pOnlo5DOITLKMWYs2AS8KQ7cAUcgALXDLMDDpf2VbgaZ4IBY8KnAXLzCGXSvPf4gbUMYHUwQx1Ehnp8eM4+EukVWv7WUlNWHnTZuJWaRyEzb3NZWKelp6SHfRM51E+IkTEWRTF5uPpVM220AmcKiMSNyEXmZm7DWcJU8YLiGu6XVMcnI58z4SuIE5eXiqs+1kNC1VDTx3efJ3ISHACLlx7ObgqFb/tupereeCUAd7u7v2kRE/wB5DPbj67t8SELWp2cJO37OVf1vTYZLi0lM2OZv04+JLaeeSaZjynmACGzABCB4+btS36H67nqacuImObCXS5Kyw0ZTlOch/VQAyCOMMY7Y82T2XC+RDmzXjfjTGm1IFuIahmwOAozt4hHtIVY6aVjASZ7sQi7Oq/polNSTRGYyvYwYh43HwqTsnU50kbd8eQFfzNx/3VperTKljwfIQhWKghCEAIQhACrO0D51dBH7ZSu3w8FZlWZ3z1SJn7I6c3b4iIEBL2g0spwBwLCSEs4ydrjl60upKKskljKcwAInyxj4Zl6+Ky14qsJXKCzhu8cXIWsXmRodZVSStvAYIwAmcmcSyPzcFi2nWGiTU6jmX0s1edewX4RgLKj3Vg26m3mo1T+Usf8AMkcAs5gz9mXFdrgWQio203Tvs94Qbwi6AcsPvf0WVMEcYy1APYgfF4TfnEvF8vkpusgYx05NlGBSYMQ9wgQ4JhWaCFWEcgG1LKTYkJvYDx5c1Z1/JA82LoIa9t6TXCPHOI+chk8wpjqFPTU8kpzSk0p44kf2YCPSIiz9XoWrZmg/ZrfVhLeGY7+SQehsebFK9rWlkM95F9YiEhs4cJALHL1Lzflf34CTpNWJ1QMRNu4x3hkZcjEPNkomu7WhORw0oGYkRCcrMWBcuPK1kmrpBqadoYAmicCxPPlM1Fr9RajjCCEQzxykJ27P/K1mF20CbUdImgfnA8Sa7GwFg/xP4VBZ0wHW6i/Me8HvA2uDrfJphTA08AcpPaQb9BL0JtfYFCFuqaQ4rZjbLsf0rSp3SSz/AEd1W71GDjwPIXXWqrZdpZZzkM8TICjbLlGxXccVwzQZd3V0p+WQWuuzbUnO80AARsJgNnDpE/M/qXJ+ZKVbhad3NLHpOjR0zm8fBj4uPhS7ZIsDrYvJORMz9XMIrHZ6gq45Dec94GNmd+/3LZpbY6jXN5owK3p5l54f+JWvv7LKvUIVyoIQhACEIQAqxFzamfsw2/zArOqxC1tUk9qG7fmBAQdfpZBneTHejIG7YL84+7tWzZWkOM5OG6DDhE73LLzP2KHtVQnvTkeUAEhsGRS5gXqYG/VS9jYHFpCc45chs5CUuf3hNedfmbv8Di+1BfvtW/8AiF/qSshcbP2cbsXhTTalrV1W3+IX+pXTYfR4NQgN5A/htiQtwuXmAr9q7cWp402YlT1HaI5qeKHEmcHByLwvj0kKmabI9bLBvAYI6Qd4ZO3KePSrVrOwY7oHpysNieUDIMm/DvVTm3lKx0wMUh1L44sw9PlyZTNzS8BYtiao5p9QqC6CbBmLpw5+lN9fqDGQJwnpw5eWCTFyfw+nt+S0afsmcNAwTVJQFIVxGNgcBIvC5WVZ1CiCmlATjOsY3FhlMyESPy8rtj+DLFdaptAt0M2dPLNMIAYkDsQne/te5cr1lv3iR73ye7OPSumVOyQPQzzxhLTyFGRbs5CNhsPG3F1y+goJpycYgOQhyyZvDzd+S14an16DPR6R5qmniFr5mLENvBlzLo2pU9PptUAQmDtOGJxE4kIcvV6lp2Z0qPTRaU339TONoo42ywEvE91nTfR4c8m8mPB5CzNyPKTDysqXybW74Cuz0ZS0lfM7/Zxn9kVuVz5+lVJlfvpC1iGOOPT6bHCFxKQh7zFUJltwt0tZY30BWlgf/EBfQ+q6kcMcZCAmOAuROVrcq+eKAbzQN/iAu6bSuBvSxOEkp4CTCB4Djj4uLLwfOePUJW0tN+hbQy1MmO5wDvPL/ayzhLHVJG80Iu/5lF0CnYZh/d5I8W4E5g4N8hd1JjG+qm/lhH/Ua8nE216ORJV4WpCELQoCEIQAsDKzLNRpz42+F0BIuq0bY6oF/HTHb14kCsyrGuM4V1BJ3E5RW9/FAaNdoTapacGjn5LPFKYsID52Z1joUGFS5yEAHMBMEUZC4YDiOXBbtp6ECOIzlOJy5GEPH7PYlGivDFUhkEmWW7jMyIrkXN2Lzvyzdewcx27h3eo1TeYsv9Sv/wBHmnCekk2ZQPIZOUgPzdSrX0t0eFcx90kYqw/RbqUMtL9UktkJETM745Lptt8SaMRJtO88L4QHPPFG15ZncsfaFyUCGviYmOErmTC135zbwlir9r+j4HPEPJDXR4MTc2Ew9nyfNUjRNICkY9+AmQmQsROQg3iEmcfUtOOk5B0ql0cGo3jlkJ2mEXYjfiBl4muqCQHLGeIPOcEgx1MQNcurkmD3NgklftjVbzdgd4wKwgw3yH4lcoqg5hymkDTwnAWaIMd5JiPjcruP8lVRU+/yCXtBJWfV6cqKeMwjARmEyyLp6T4qubBVBBqZ7sMwmHGQgbIAPxWdkm1W0DPkb4ZE0dOBliXtG/asdmKyZ5TmAxDciWIsw4vy+JXXG1LX8g6TtCY05ymEYlLYt2LccfbfystuxD70N9NI8sgsQmYllE2XhF+xINL16WvjnilcPs4SeSRmEcuX0rbqunSfsiCOjY7Z5Hg+Mj86wqWpxgn7S7CUBEc8hfV94/Es8QzLxLme1uzZUEgDlmEjZAbc111espifRTCrfnGnJnLxMWHL81zra6cgoaGnkMTkDIj7yAPDxWnBVbmgr+z8OdXSh5pBe3wkuybYVUcZxsYXcQGxAX2jd3T22XM/o6pN7qMHojyJ/wAy6hqNRI1XILRhM5iIRu/SPmy4ry/OrXhpx/lpjsrKBTWHfiWAkwn0OmWmPlqVa/ljjZnUfZSnIDnE48DF7ubPcSy8LcVls1zz10r9hyYsXw8yw4k+vpXkadeFsQsRe6yWhQEIQgBRZBuf5VKUe1y/K6AkKt7ZM7QxyN/8aQZXf2cSZWRQdWpWlgmjfsMSZ/1QEbVNNGrjC74kDiYEPhJL4tFCAt/PIcu7fJnJrAJdmVrvxUrZSreWkiy6wHA272Jks1uqqsprtGEAtbMnzJ/ujd/5LKkl6y86/Eyv/S/RtJTwVAeArOXsl2Lk1JVHEbGBYF2sTLu2IV+nzRMWZCBcHGxZiPLwJcHnjeMzAu0CIXb4SXR+JSqerIpY8Oh6B9JLsO7rAaUeVmKyby7QaRJfIz5+0THIG9w35VyrT6V5pQBvE/H1Cs9VoRhkcGfNu29uxbVwS688ILbrmsUMPCjATO+TE4DiPu7clS6mc5TczMjK98ie5N7LehFLTlIYADcSe3uT99noRbmkuVuNmLFi/BaylKxgrpE7vcnJ39JPkt9JVlFni3WOL3bs9ya/sEHLgdh72diy/Rb/ANgQWfnK/d1f0VnUkizRNUemLizmFuaMSwE/e/oTik29q4pDMHBgN+ETtkAeyPoSHUKJ4Ste4l0k3S6NKpN9MAd3UXqFVczS1ogebQbcVNbHuitGHeIeL5qv1lWUpMRdojjfxOPrdbtYohhlcBLMe1nt2eyoQjd7N4nxb7yhTMTqRJ036H6KxVNQXBhHBiLgLJpWVYDIZFvLkRPnSzEf+QWb9VP0aJtO0yAHDM52FyHpHIhy5nUGnoo94DGBU5SFYJBIZI3Pqx5XdcT5Ndr8NeNYm2WvSZnCkORzORsTNikDA29l2u6jbJRuNOxP/wC8ZSP68uVZbUm8dI0TPzzOMbY8L5dSdabSNHGAdwCzM3oV5WLDKnr0lC/D0cOxZM92UUjuSlD2KxUyQhCAFGM7G/3VJUUxuf5UBIF7svXQzLRNJ3N80BW9JPcV1TB4Z3KcPLxvcR/Kt1Xs48s+ZSHuyITeJyLFyEcfStO08BCMVQDc9KYk9u+Pxj+CsVJUjJGBi/AxEmt62ValV9lk3P0aRCKEnKwA8jiLv2ZF3Li/0oaD9Wqt6A8lRxu3Sxq+7eHIx07CVhyEm+MSyUuupI9VoHDxiPK/iGQeCnh5ul4S5edjhujSlHMxh2iJX+FbddkcpAN/E3C3etZQnSzmEnIQOYHw+7l7lIjkg38BSkcgA+R4dT/DkuvNKl2RBL0qmaEMj4HIN+PUAeVSSkHz/i6mftjTMzMhq5Mn7MosWHy9i2/t/S2b+71D+tyBUbpv8SBcR83V3drdyGdr9o++/MmAVOlSPvHOpi4XeIsHJ/ZF7L0dodLbh9WqH7snIcnUa/8AyBZPAMgvE78D4xlfpPy/NJtKI4p+wmIGISZlZqjWtMNrDHVBxuziUfD+SUanqNOc4SQtJG2GMjni5P7XKtYbaxoETXTykArdQ3bzP8SZ7A6I9XWBduSHnMn6eXwpPVBvJACNyMifFmZu0i6RZde0bTg0rT7F/FnbnfxZENl5/lcyieqJla8LgcMNRG4cph02bjbHhwUOLZqIHhs54wPkIOXJn5rJNsBnadiK4ZXby5l1K06lVjDFJIXYAkXHvLuH59i5k5S7NE1svExFV/vOpRg3TRiJyehzLiIqyTF4WSHZSAhiOY+upIpXZ+1hIriPy7E7h5i4+9aFDeAW/qvSK34rNaD4u3vu3rQG9CEIAWhm539y3qOR4u/yt+VAZTHZvWo3a6CK7rdAHG/4ID0oBISEmZ2JiYm9LOq3oEr0s8tEb8tykpid+qMivh77mrYq/tNprygJxvjNAWcRN5m8P4ICRtBBGcEhSDmwCRNw4tbiqNohTRkZQvymYO/qBXfRtSCrh5hxOxBLGXUJ+IVVdY046eQxgCwTOLuQvysXrydefklqlSNuOljlmf0h7GtWBv4W+1BruLN1riksRATgY2IXxcXbmYl22q1Goo5A4bwN1HmN79HWQqBtNoNHqTBJGYwTyDcXJiED9kuC9nx/lKX1orUNHHrL2yZavoVRSG4TATceBC1wf3JZl/x105uaWplQcWRZF0XV9QPbIEbvZvTZmbvUzTdKnqTYIQM/SVrA3vyXRtmdn6WiY55zGomja7CDEUYGXSI+tebm+TML79Clv6JX0cbF7lmqqgWY7ZRATdPlIvWvNXeUpIine7BlZvMOSY0lTUVZzkX2bDFI0Y3sIkXQstF0s55AecLhBwAjft5u7iuRyclcr01meutls0WEBhBwFgYxEnZm9IpJrUv1ypClF+SEhkqXbvx5gD8cHTPaDVPq0bCDZSSckIN3l5vcy0aBpu4j53zOQs5CfqIyWkrFhjT16M+6zdlrMzdwrbTtx/VYgGS2U5W4KxBJXjsvUIAQhCAFCqX5n9ymqHN1OgEFNqplNz2CM3MAd35sx5uPl7lYYJmt2+u90noqUZJaoCG4clm8LHkWVvWpH9nYf8S3ozUAlVOpxx9RgPxP2pcWqPI/2ccx+gsOR/mp8Gjwh2Bf0OT5OuVbW7YaoFRJFBCcIA+LOMZkR+0gLXUSHFOc8IExgwvUwM3WHnH19as9NUQ1kOQFmBtZ8SsQ+rh2OuY/R3UVUclSdQEj75hdikbD7vHuT44jinOSOYKMJB+0jFxlyLzct8VV1K+yymn9E/VNBnGSMoH3ghkztLJkTCXUPFLqyopIYniqThYxLIN0Q7wC6vU6xmeLBjOWaXIsWxLAfi5mUVygy5IR5eLlIWfNj09qwrqnqN57NYxrp20NPNHjLupwBsROVxzL5ElVdomkzcbEB347t8xb+bL06ozEMIgZ+ZiEQLgm9RTSSR0mACBk5PIWBNbFaTyuV4UqPSp/2S06/wDFqfduv/KYUWgaVHxdzkIX8fIP6upVWdRlKLB1OTiTAXhTPUMmakHBuYSKQsCWn/YpodMz0j1+uU0IbuFoYgJsTkiId4w/dt+q10lTTVMYR0pQXEsnGQhzP2nftdYRVLlcTCFuJ2cwJuQenq9K8oY6eYmzhwcmN8oywJhHxdqwqu79ZdJyvBrpOzsznIVQVmN7sMUhDf0difahXRUcORPwFsQG+RmXcI+tVYoIo2AgqJ4Hkc3ET5+UfFyssotOlOdqg6gKthHGOMiEMfas9uK0jrPiMq7V6zOmz3oVEw3nnyGCI3sEcf8AX5J09ccb/aQyN7UY5j/sqJ9JY1cgQPHFIBRlk5Rc9vy3S/YTbOu+tQU84HKBuQ3ICYx5cslppTDq9LqsDtbNhLvE3wP8FumlFnyya3be62zUMZ9QC/rtxUP9hQX6S9zkpIF82rHvRKMhOMSGMxt1mfEcC7ybjwVkbs+SQV0Yxz0vKLALGI2blaVyHC/yTsZmdAbkIQgBQ6huZ/cpihz9T/dQCeKhlic9zJZjIjcTHO5F7TrcNTVN2jG/rZ7f7KchALyKrPxhG3qDMn/RRXp3iqIHczkKQsTYyIgfly5RLsTpR6ykGVmyyZxe7EPUJepAKNqqeR5AISfAgIHHLEWLHgq/HpbiVyMXyGziIDIWPxE6t4aUF+c5JfQxvy/5VMipwBrCLN6mZZVxqnrNJtysRU6bR2swjGcgD2ZmQDzeLvUXUmqYSxGCJojxcpGETNvuuyvSHb/jqyiV+iHdP9lRoacZnu1YzPaziADEbfldNY9mMmu9TUv8MpsP6rfWaFTyvcwbLzDkJKCWzNn+zqKmP0CJjj+ispSK9myUWyo//fV+r7aT+q0zbMYtf6xN6t4ZGLfi60fsCo//AGT2945fosw2YZ3+0nqZfZMxx/RMGiuviaFuNVDI/Y0ZRBIb+zzOo+lw1E13OmaMLWEhMoiIfczcqtlJo1PE9wAGfzPk5Jgzf8ZV6S/0WVUv2UybT3Z7HvI+Uga7b0REvQ5KFDprxkbi4zsQ2BssCD2uW6v9v+WUeahjN7kDO/pVa4k/osuRoi7KxkMF5CM3vxYiysodPpgTSST2wLIhjKN8LB5uCmS6PdnYJJI8uDsLjjj+Cm0lO0QAA9gta79Tq8ziwpVa9IrRVINyzC7dzGAkT/NZh9cLxwh7VhL/AGU1CsVIMmmnJZ5pc2AhJhAcB4e51PDtb3ivFkPa3vFATkIQgBQ5+pCEBrQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAEIQgBCEIAQhCAFkPb80IQE5CEID/2Q==",
+		img: "https://github.com/laxmansharma12/assets/blob/main/portfolio/stg%20logo.jpg?raw=true",
 		school: "St. George College of Management, Science & Nursing",
 		date: "2023",
 		grade: "9.14 CGPA",
@@ -177,7 +177,7 @@ export const education = [
 	},
 	{
 		id: 1,
-		img: "https://github.com/ankit705yadav/portfolio-updated/assets/90278910/6286ff99-1856-4fcf-9c4a-96610cc6b5e5",
+		img: "https://github.com/laxmansharma12/assets/blob/main/portfolio/nhpuc-logo.jpg?raw=true",
 		school: "New Horizon College",
 		date: "2020",
 		grade: "76.16%",
@@ -186,7 +186,7 @@ export const education = [
 	},
 	{
 		id: 2,
-		img: "https://github.com/ankit705yadav/portfolio-updated/assets/90278910/511875ba-c3d1-457c-8814-1b2184f5857c",
+		img: "https://github.com/laxmansharma12/assets/blob/main/portfolio/svs-logo.png?raw=true",
 		school: "Swamy Vivekananda Enghish High School",
 		date: "2018",
 		grade: "82.56%",
@@ -203,7 +203,7 @@ export const projects = [
 		description:
 			"Butterfly Interior: In this project there are varieties of interior designs for Bedroom, Kitchen, Bathroom, Dining room and Living room.  Where dreams take flight within your home! Discover captivating interior designs, from chic minimalism to luxurious comfort. Efficient platform ensures quick, hassle-free transformations. Say goodbye to long renovations, welcome your dream interior in no time. Your home, your style, with Butterfly Interior ",
 		image:
-			"https://user-images.githubusercontent.com/91863813/284039163-5e7b2fa5-2cc1-41c1-950d-6fbe3f13decf.jpg",
+			"https://github.com/laxmansharma12/assets/blob/main/portfolio/home-page.jpg?raw=true",
 		tags: ["Mongo DB", "Express Js", "React", "Node Js", "Emailjs"],
 		category: "Web Application",
 		github: "https://github.com/laxmansharma12/Butterfly-interiors-project",
@@ -216,7 +216,7 @@ export const projects = [
 		description:
 			"Developed a Game Box application using Visual Basic 6.0 and MySQL database for a electonic game lovers, High data security and scores tracking, enhancing data organization. Different collection of games and ensuring a seamless experience for administrators and players.",
 		image:
-			"https://user-images.githubusercontent.com/91863813/283160642-594f838f-cbc8-4a4b-aa7f-4df429e39f54.png",
+			"https://github.com/laxmansharma12/assets/blob/main/portfolio/home.png?raw=true",
 		tags: ["Visual Basic 6.0", "mySQL"],
 		category: "Web Application",
 		github: "https://github.com/laxmansharma12/Game-Box-VB6.0",
@@ -243,7 +243,7 @@ export const projects = [
 		description:
 			"Developed Simon game using HTML, CSS and Javascript, Used jQuery library to detect when a keyboard key has been pressed. It is a memory game where players repeat a sequence of colored lights and tones. The game consists of a console with four colored buttons, each corresponding to a musical note. The console plays a sequence of tones and lights up the corresponding buttons. Players must then replicate the sequence by pressing the buttons in the correct order. The sequences get longer and more complex as the game progresses.",
 		image:
-			"https://user-images.githubusercontent.com/91863813/284040196-bb8710b0-4e71-4aaa-817d-5bd39ac277cc.jpg",
+			"https://github.com/laxmansharma12/assets/blob/main/portfolio/simon-game.jpg?raw=true",
 		tags: ["HTML", "Javascript", "CSS"],
 		category: "Web Application",
 		github: "https://github.com/laxmansharma12/SIMON_GAME",
@@ -256,7 +256,7 @@ export const projects = [
 		description:
 			"A very usefully chrome extension which can be used to save multiple tabs and lists to stay organized, all within your browser",
 		image:
-			"https://user-images.githubusercontent.com/91863813/284041192-475f60bf-84df-428a-bf26-8ac5915bdf0c.jpg",
+			"https://github.com/laxmansharma12/assets/blob/main/portfolio/extensiom.jpg?raw=true",
 		tags: ["HTML", "CSS", "Javascript"],
 		category: "Extension",
 		github:
@@ -270,7 +270,7 @@ export const projects = [
 		description:
 			"Tin dog is fully respnsive website developed using HTML, CSS and Bootstrap, For those who is seeking for new and interesting dogs nearby.",
 		image:
-			"https://user-images.githubusercontent.com/91863813/284041416-3b993665-f5fd-431c-8241-bc668dbf7c6a.jpg",
+			"https://github.com/laxmansharma12/assets/blob/main/portfolio/tindog%20homepage.jpg?raw=true",
 		tags: ["HTML", "CSS"],
 		category: "Web Application",
 		github: "https://github.com/laxmansharma12/tin_dog",
