@@ -131,7 +131,6 @@ const Skills = () => {
 					{skills.map((item) => (
 						<Skill>
 							<SkillTitle>{item.title}</SkillTitle>
-							<hr></hr>
 							<SkillList>
 								{item.skills.map((skill) => (
 									<SkillItem>
