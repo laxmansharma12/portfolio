@@ -179,7 +179,7 @@ const ContactMeButton = styled.a`
     max-width: 200px;
     text-align: center;
     padding: 14px 0;
-    color: ${({ theme }) => theme.gradient1};
+    color: ${({ theme }) => theme.contactBtnText};
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
@@ -211,8 +211,9 @@ const Image = styled.img`
 	max-height: 400px;
 	object-position: center;
 	background-repeat: no-repeat;
-	box-shadow: 10px 10px 20px #1f2634, -10px -10px 20px #1f2634;
-	animation: profile_animate 8s ease-in-out infinite 1s;
+	box-shadow: 10px 10px 20px ${({ theme }) => theme.shadow},
+		-10px -10px 20px ${({ theme }) => theme.shadow};
+	animation: profile_animate 8s ease-in-out infinite 0s;
 	@media (max-width: 768px) {
 		max-width: 400px;
 		max-height: 400px;

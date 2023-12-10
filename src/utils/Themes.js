@@ -1,7 +1,7 @@
 export const darkTheme = {
 	bg: "#1C1C27",
 	bgLight: "#1C1E27",
-	primary: "#854CE6",
+	primary: "#be1adb",
 	text_primary: "#F2F3F4",
 	text_secondary: "#b1b2b3",
 	tnc: "#191924",
@@ -13,7 +13,9 @@ export const darkTheme = {
 	resumeBtnTextColor: "White",
 	gradient1:
 		"hsla(271, 100%, 50%, 1)linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%)",
-	contactBtnBorder: "",
+	contactBtnBorder: "rgb(200,0, 271)",
+	contactBtnText: "rgb(200,0, 271)",
+	shadow: "#6f6e6e",
 };
 
 export const lightTheme = {
@@ -27,6 +29,8 @@ export const lightTheme = {
 	card: "#FFFFFF",
 	button: "#5c5b5b",
 	resumeBtnTextColor: "white",
+	contactBtnText: "black",
 	gradient1: "black",
 	contactBtnBorder: "black",
+	shadow: "#1f2634",
 };
