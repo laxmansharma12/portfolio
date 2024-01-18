@@ -5,7 +5,7 @@ export const Bio = {
 		"A motivated and versatile individual, always eager to work in an environment which encourages me to succeed and grow professionally where I can utilize my skills and knowledge appropriately. With a passion for learning, I am ready to make a meaningful contribution and achieve great things.",
 	github: "https://github.com/laxmansharma12",
 	resume:
-		"https://drive.google.com/file/d/1D3fLS_YdUMsiz4sxnyIk3JsxOIgSJPZG/view?usp=drivesdk",
+		"https://drive.google.com/file/d/1194QVvkw-7YBi0eAGLeI8d-ZeN2j6iVe/view?usp=drivesdk",
 	linkedin: "https://www.linkedin.com/in/laxman-sharma/",
 	twitter: "https://twitter.com/laxmansharmaX",
 	insta: "https://www.instagram.com/laxmansharmawe/",
