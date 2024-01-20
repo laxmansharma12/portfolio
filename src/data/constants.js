@@ -214,7 +214,7 @@ export const projects = [
 		],
 		category: "Web Application",
 		github: "https://github.com/laxmansharma12/Flavorfolio-app-frontend",
-		webapp: "https://laxmansharma.vercel.app/",
+		webapp: "https://flavorfolio.vercel.app/",
 	},
 	{
 		id: 1,
