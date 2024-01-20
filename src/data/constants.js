@@ -198,6 +198,26 @@ export const education = [
 export const projects = [
 	{
 		id: 0,
+		title: "Flavorfolio",
+		date: "Dec 2023 - Jan 2024",
+		description:
+			"Flavor Folio, a project that blends creativity with functionality to create a unique and visually stunning experience for food enthusiasts and professionals alike. Built with a blend of MongoDb, Express, React, Node with Styled-Components , Flavor Folio showcases not only your culinary skills but also your proficiency in leveraging technology to elevate your craft.",
+		image:
+			"https://github.com/laxmansharma12/assets/blob/main/flavorfolio/Screenshot%20from%202024-01-20%2016-58-01.png?raw=true",
+		tags: [
+			"Mongo-DB",
+			"Express Js",
+			"React",
+			"Node Js",
+			"Emailjs",
+			"Styled-components",
+		],
+		category: "Web Application",
+		github: "https://github.com/laxmansharma12/Flavorfolio-app-frontend",
+		webapp: "https://laxmansharma.vercel.app/",
+	},
+	{
+		id: 1,
 		title: "Butterfly Interiors",
 		date: "May 2023 - Aug 2023",
 		description:
@@ -210,7 +230,7 @@ export const projects = [
 		webapp: "https://tame-pink-fawn-tam.cyclic.app/",
 	},
 	{
-		id: 1,
+		id: 2,
 		title: "Game Box",
 		date: "Jan 2022 - May 2022",
 		description:
@@ -237,7 +257,7 @@ export const projects = [
 		],
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Simon Game",
 		date: "Feb 2023 - Feb 2023",
 		description:
@@ -250,7 +270,7 @@ export const projects = [
 		webapp: "https://laxmansharma12.github.io/SIMON_GAME/",
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "ToDoList (Chrome Extension)",
 		date: "Nov 2023 - Nov 2023",
 		description:
@@ -264,7 +284,7 @@ export const projects = [
 		webapp: "",
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "Tin Dog",
 		date: "Dec 2021 - May 2022",
 		description:
