@@ -218,6 +218,19 @@ export const projects = [
 	},
 	{
 		id: 1,
+		title: "My Music App",
+		date: "Feb 2024 - Feb 2024",
+		description:
+			"Welcome to My Music App – where technology meets passion for music. As the creator, I integrated Mongo-DB, Express Js, React, Node Js, and Styled-components to redefine music listening. Standout feature: seamless playback resumption post-refresh. With responsive design and intuitive interface, it's a delightful music discovery experience. ",
+		image:
+			"https://github.com/laxmansharma12/assets/blob/main/portfolio/myMusicPlayer.png?raw=true",
+		tags: ["Mongo-DB", "Express Js", "React", "Node Js", "Styled-components"],
+		category: "Web Application",
+		github: "https://github.com/laxmansharma12/MusicApp-frontend",
+		webapp: "https://mymusicplayerapp.vercel.app/",
+	},
+	{
+		id: 1,
 		title: "Butterfly Interiors",
 		date: "May 2023 - Aug 2023",
 		description:
@@ -282,18 +295,5 @@ export const projects = [
 		github:
 			"https://github.com/laxmansharma12/ToDoList-Chrome-Extension/commits/main",
 		webapp: "",
-	},
-	{
-		id: 5,
-		title: "Tin Dog",
-		date: "Dec 2021 - May 2022",
-		description:
-			"Tin dog is fully respnsive website developed using HTML, CSS and Bootstrap, For those who is seeking for new and interesting dogs nearby.",
-		image:
-			"https://github.com/laxmansharma12/assets/blob/main/portfolio/tindog%20homepage.jpg?raw=true",
-		tags: ["HTML", "CSS"],
-		category: "Web Application",
-		github: "https://github.com/laxmansharma12/tin_dog",
-		webapp: "https://laxmansharma12.github.io/tin_dog/",
 	},
 ];
