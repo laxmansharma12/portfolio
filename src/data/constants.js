@@ -230,7 +230,7 @@ export const projects = [
 		webapp: "https://mymusicplayerapp.vercel.app/",
 	},
 	{
-		id: 1,
+		id: 2,
 		title: "Butterfly Interiors",
 		date: "May 2023 - Aug 2023",
 		description:
@@ -243,7 +243,7 @@ export const projects = [
 		webapp: "https://tame-pink-fawn-tam.cyclic.app/",
 	},
 	{
-		id: 2,
+		id: 3,
 		title: "Game Box",
 		date: "Jan 2022 - May 2022",
 		description:
@@ -270,7 +270,7 @@ export const projects = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		title: "Simon Game",
 		date: "Feb 2023 - Feb 2023",
 		description:
@@ -283,7 +283,7 @@ export const projects = [
 		webapp: "https://laxmansharma12.github.io/SIMON_GAME/",
 	},
 	{
-		id: 4,
+		id: 5,
 		title: "ToDoList (Chrome Extension)",
 		date: "Nov 2023 - Nov 2023",
 		description:
