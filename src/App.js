@@ -69,10 +69,28 @@ function App() {
 		}
 	};
 	useEffect(() => {
-		// Simulate loading time with a timeout
-		const timer = setTimeout(() => setLoading(false), 3000); // 2 seconds
-		return () => clearTimeout(timer);
+		const minimumLoadTime = 3000; // 3 seconds
+		const startTime = Date.now();
+
+		const handleLoad = () => {
+			const currentTime = Date.now();
+			const elapsedTime = currentTime - startTime;
+			if (elapsedTime < minimumLoadTime) {
+				const remainingTime = minimumLoadTime - elapsedTime;
+				setTimeout(() => setLoading(false), remainingTime);
+			} else {
+				setLoading(false);
+			}
+		};
+
+		window.addEventListener("load", handleLoad);
+
+		// Cleanup the event listener
+		return () => {
+			window.removeEventListener("load", handleLoad);
+		};
 	}, []);
+
 	if (loading) {
 		return <PreLoader />;
 	}
