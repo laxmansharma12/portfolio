@@ -25,7 +25,7 @@ const Card = styled.div`
 	display: flex;
 	flex-direction: column;
 	gap: 12px;
-	transitition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 	border: 0.1px solid #306ee8;
 	box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
 

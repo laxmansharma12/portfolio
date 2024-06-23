@@ -207,7 +207,7 @@ const Contact = () => {
 					<ContactInput placeholder="Your Name" name="from_name" required />
 					<ContactInput placeholder="Subject" name="subject" required />
 					<ContactInputMessage placeholder="Message" rows="4" name="message" />
-					<ContactButton type="submit" value="Send" />
+					<ContactButton data-cursor="-inverse" type="submit" value="Send" />
 				</ContactForm>
 				<Snackbar
 					open={open}
