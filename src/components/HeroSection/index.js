@@ -138,69 +138,67 @@ const SubTitle = styled.div`
 
 //resume button styles
 const ResumeButton = styled.a`
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 200px;
-    text-align: center;
-    padding: 16px 0;
-    color: ${({ theme }) => theme.resumeBtnTextColor};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	text-decoration: none;
+	width: 95%;
+	max-width: 200px;
+	text-align: center;
+	padding: 16px 0;
+	color: ${({ theme }) => theme.resumeBtnTextColor};
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 600;
+	transition: all 0.2s ease-in-out !important;
 	background: ${({ theme }) => theme.gradient1};
-	
-   margin-right:10px;
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px #1F2634,
-    filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-		margin-right:0;
-        font-size: 18px;
-    } 
 
+	margin-right: 10px;
+	&:hover {
+		transform: scale(1.05);
+		transition: all 0.4s ease-in-out;
+		/* box-shadow: 20px 20px 60px #1f2634; */
+		filter: brightness(1);
+	}
+
+	@media (max-width: 640px) {
+		padding: 12px 0;
+		margin-right: 0;
+		font-size: 18px;
+	}
 `;
 const ContactMeButton = styled.a`
--webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-    text-decoration: none;
-    width: 95%;
-    max-width: 200px;
-    text-align: center;
-    padding: 14px 0;
-    color: ${({ theme }) => theme.contactBtnText};
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 20px;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out !important;
-    background: transperent;
+	-webkit-appearance: button;
+	-moz-appearance: button;
+	appearance: button;
+	text-decoration: none;
+	width: 95%;
+	max-width: 200px;
+	text-align: center;
+	padding: 14px 0;
+	color: ${({ theme }) => theme.contactBtnText};
+	border-radius: 20px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 600;
+	transition: all 0.2s ease-in-out !important;
+	background: transperent;
 	border: 2px solid ${({ theme }) => theme.contactBtnBorder};
-   
-    &:hover {
-        transform: scale(1.05);
-    transition: all 0.4s ease-in-out;
-    box-shadow:  20px 20px 60px black,
-    filter: brightness(1);
-    }    
-    
-    
-    @media (max-width: 640px) {
-        padding: 12px 0;
-		margin-top:10px;
-        font-size: 18px;
-    }`;
+
+	&:hover {
+		transform: scale(1.05);
+		transition: all 0.4s ease-in-out;
+		/* box-shadow:  20px 20px 60px black, */
+		filter: brightness(1);
+	}
+
+	@media (max-width: 640px) {
+		padding: 12px 0;
+		margin-top: 10px;
+		font-size: 18px;
+	}
+`;
 
 //---------------dp image styles------------------------------
 const Image = styled.img`
@@ -270,11 +268,7 @@ const Hero = () => {
 						<ContactMeButton href="#contact">Contact Me</ContactMeButton>
 					</HeroLeftContainer>
 					<HeroRightContainer>
-						<Image
-							data-cursor-text="Laxman Sharma"
-							src={HeroImg}
-							alt="heroImg"
-						/>
+						<Image src={HeroImg} alt="heroImg" />
 					</HeroRightContainer>
 				</HeroInnerContainer>
 			</HeroContainer>
