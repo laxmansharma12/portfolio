@@ -260,13 +260,21 @@ const Hero = () => {
 							</Span>
 						</TextLoop>
 						<SubTitle>{Bio.description}</SubTitle>
-						<ResumeButton href={Bio.resume} target="display">
+						<ResumeButton
+							data-cursor="-inverse"
+							href={Bio.resume}
+							target="display"
+						>
 							Check Resume
 						</ResumeButton>
 						<ContactMeButton href="#contact">Contact Me</ContactMeButton>
 					</HeroLeftContainer>
 					<HeroRightContainer>
-						<Image src={HeroImg} alt="heroImg" />
+						<Image
+							data-cursor-text="Laxman Sharma"
+							src={HeroImg}
+							alt="heroImg"
+						/>
 					</HeroRightContainer>
 				</HeroInnerContainer>
 			</HeroContainer>
