@@ -71,13 +71,14 @@ function App() {
 	useEffect(() => {
 		const minimumLoadTime = 3000; // 3 seconds
 		const startTime = Date.now();
+		let timer;
 
 		const handleLoad = () => {
 			const currentTime = Date.now();
 			const elapsedTime = currentTime - startTime;
 			if (elapsedTime < minimumLoadTime) {
 				const remainingTime = minimumLoadTime - elapsedTime;
-				setTimeout(() => setLoading(false), remainingTime);
+				timer = setTimeout(() => setLoading(false), remainingTime);
 			} else {
 				setLoading(false);
 			}
@@ -85,9 +86,13 @@ function App() {
 
 		window.addEventListener("load", handleLoad);
 
-		// Cleanup the event listener
+		// Fallback in case 'load' event doesn't fire on some devices
+		timer = setTimeout(() => setLoading(false), minimumLoadTime + 1000); // 4 seconds total fallback
+
+		// Cleanup the event listener and timer
 		return () => {
 			window.removeEventListener("load", handleLoad);
+			if (timer) clearTimeout(timer);
 		};
 	}, []);
 
