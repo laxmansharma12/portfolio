@@ -268,7 +268,11 @@ const Hero = () => {
 						<ContactMeButton href="#contact">Contact Me</ContactMeButton>
 					</HeroLeftContainer>
 					<HeroRightContainer>
-						<Image src={HeroImg} alt="heroImg" />
+						<Image
+							data-cursor-text="Laxman Sharma"
+							src={HeroImg}
+							alt="heroImg"
+						/>
 					</HeroRightContainer>
 				</HeroInnerContainer>
 			</HeroContainer>
