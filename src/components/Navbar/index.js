@@ -10,7 +10,7 @@ const Nav = styled.div`
 	height: 60px;
 	display: flex;
 	justify-content: center;
-	align-item: center;
+	align-items: center;
 	font-size: 1rem;
 	position: sticky;
 	top: 0;
@@ -45,9 +45,9 @@ const NavLogo = styled(LinkR)`
 `;
 const A = styled.a`
 	display: flex;
-	alignitems: center;
+	align-items: center;
 	color: ${({ theme }) => theme.text_primary};
-	marginbottom: 20;
+	margin-bottom: 20;
 	cursor: pointer;
 `;
 // logo text
@@ -141,22 +141,47 @@ const GithubButton = styled.a`
 
 //mobile view navlinks styles
 const MobileMenuLinks = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  position: absolute;
-  top: 60px;
-  right: 0;
-  width: 46%;
-  padding: 12px 40px 24px 20px;  
-  background-color: ${({ theme }) => theme.tnc};
-  border-radius: 0 0 20px 20px;
-  box-shadow: 0 5 10px  rgba(0, 0, 0, 0.3;
-  opacity: ${({ open }) => (open ? "1" : "0")};
-  z-index: ${({ open }) => (open ? "1" : "-1")};
-  GithubButton{
-	margin-right:10px;
-  }
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	position: absolute;
+	top: 60px;
+	right: 0;
+	width: 43%;
+	padding: 12px 40px 24px 20px;
+	background-color: ${({ theme }) => theme.tnc};
+	border-radius: 0 0 20px 20px;
+	/* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); */
+	opacity: ${({ open }) => (open ? "1" : "0")};
+	visibility: ${({ open }) => (open ? "visible" : "hidden")};
+	z-index: 1;
+	transition: opacity 0.5s, visibility 0.5s;
+	animation: ${({ open }) =>
+		open ? "navAnimateOpen 0.5s forwards" : "navAnimateClose 0.5s forwards"};
+	GithubButton {
+		margin-right: 10px;
+	}
+	@keyframes navAnimateOpen {
+		from {
+			opacity: 0;
+			transform: translateY(-10px);
+		}
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	@keyframes navAnimateClose {
+		from {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		to {
+			opacity: 0;
+			transform: translateY(-10px);
+		}
+	}
 `;
 
 //mobile view styles
@@ -177,7 +202,7 @@ export const MobileLink = styled.a`
 `;
 
 const Navbar = () => {
-	const [Open, setOpen] = React.useState(false);
+	const [open, setOpen] = React.useState(false);
 	const navHide = useRef();
 	const mobileIcon = useRef();
 	const theme = useTheme();
@@ -196,7 +221,7 @@ const Navbar = () => {
 		return () => {
 			document.removeEventListener("mousedown", handleClickOutside);
 		};
-	});
+	}, []);
 
 	return (
 		<Nav>
@@ -209,7 +234,7 @@ const Navbar = () => {
 				<MobileIcon ref={mobileIcon}>
 					<FaBars
 						onClick={() => {
-							setOpen(!Open);
+							setOpen(!open);
 						}}
 					/>
 				</MobileIcon>
@@ -227,70 +252,68 @@ const Navbar = () => {
 					</GithubButton>
 				</ButtonContainer>
 			</NavContainer>
-			{Open && (
-				<MobileMenuLinks open={Open} ref={navHide}>
-					<MobileLink
-						href="#about"
-						onClick={() => {
-							setOpen(!Open);
-						}}
-					>
-						About
-					</MobileLink>
-					<MobileLink
-						href="#skills"
-						onClick={() => {
-							setOpen(!Open);
-						}}
-					>
-						Skills
-					</MobileLink>
-					<MobileLink
-						href="#experience"
-						onClick={() => {
-							setOpen(!Open);
-						}}
-					>
-						Experience
-					</MobileLink>
-					<MobileLink
-						href="#projects"
-						onClick={() => {
-							setOpen(!Open);
-						}}
-					>
-						Projects
-					</MobileLink>
-					<MobileLink
-						href="#education"
-						onClick={() => {
-							setOpen(!Open);
-						}}
-					>
-						Education
-					</MobileLink>
-					<MobileLink
-						href="#contact"
-						onClick={() => {
-							setOpen(!Open);
-						}}
-					>
-						Contact
-					</MobileLink>
-					<GithubButton
-						style={{
-							padding: "10px 16px",
-							background: `${theme.primary}`,
-							color: "white",
-							width: "max-content",
-						}}
-						href="https://github.com/laxmansharma12"
-						target="_blank"
-					>
-						Github Profile
-					</GithubButton>
-				</MobileMenuLinks>
-			)}
+			<MobileMenuLinks open={open} ref={navHide}>
+				<MobileLink
+					href="#about"
+					onClick={() => {
+						setOpen(!open);
+					}}
+				>
+					About
+				</MobileLink>
+				<MobileLink
+					href="#skills"
+					onClick={() => {
+						setOpen(!open);
+					}}
+				>
+					Skills
+				</MobileLink>
+				<MobileLink
+					href="#experience"
+					onClick={() => {
+						setOpen(!open);
+					}}
+				>
+					Experience
+				</MobileLink>
+				<MobileLink
+					href="#projects"
+					onClick={() => {
+						setOpen(!open);
+					}}
+				>
+					Projects
+				</MobileLink>
+				<MobileLink
+					href="#education"
+					onClick={() => {
+						setOpen(!open);
+					}}
+				>
+					Education
+				</MobileLink>
+				<MobileLink
+					href="#contact"
+					onClick={() => {
+						setOpen(!open);
+					}}
+				>
+					Contact
+				</MobileLink>
+				<GithubButton
+					style={{
+						padding: "10px 16px",
+						background: `${theme.primary}`,
+						color: "white",
+						width: "max-content",
+					}}
+					href="https://github.com/laxmansharma12"
+					target="_blank"
+				>
+					Github Profile
+				</GithubButton>
+			</MobileMenuLinks>
 		</Nav>
 	);
 };

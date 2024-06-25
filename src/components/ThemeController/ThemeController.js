@@ -13,7 +13,7 @@ const Theme = styled.div`
 	left: -70px;
 	top: 45%;
 	text-align: center;
-	transition: 0.3s;
+	transition: 0.6s;
 	p {
 		font-weight: bold;
 	}
