@@ -4,8 +4,8 @@ import styled from "styled-components";
 
 const Div = styled.div`
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	bottom: 10px;
+	right: 10px;
 	z-index: 9999;
 	cursor: pointer;
 	display: flex;
