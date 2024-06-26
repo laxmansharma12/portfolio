@@ -69,6 +69,8 @@ const MobileIcon = styled.div`
 		display: block;
 		font-size: 1.5rem;
 		cursor: pointer;
+		outline: none;
+		box-shadow: none;
 		color: ${({ theme }) => theme.text_primary};
 		transition: transform 0.3s;
 		&.open {
