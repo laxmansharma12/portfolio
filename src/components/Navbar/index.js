@@ -148,8 +148,8 @@ const MobileMenuLinks = styled.div`
 	position: absolute;
 	top: 60px;
 	right: 0;
-	width: 43%;
-	padding: 12px 40px 24px 20px;
+	width: fit-content;
+	padding: 12px 24px 20px;
 	background-color: ${({ theme }) => theme.tnc};
 	border-radius: 0 0 20px 20px;
 	/* box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); */
