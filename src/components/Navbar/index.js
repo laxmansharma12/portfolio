@@ -4,6 +4,7 @@ import { Link as LinkR } from "react-router-dom";
 import { IoDocument } from "react-icons/io5";
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
+import { FaXmark } from "react-icons/fa6";
 
 const Nav = styled.div`
 	background-color: ${({ theme }) => theme.tnc};
@@ -15,9 +16,6 @@ const Nav = styled.div`
 	position: sticky;
 	top: 0;
 	z-index: 10;
-	@media screen and (max-width: 960px) {
-		transition: 0.8s all ease;
-	}
 `;
 
 const NavContainer = styled.div`
@@ -28,6 +26,9 @@ const NavContainer = styled.div`
 	width: 100%;
 	padding: 0 24px;
 	max-width: 1200px;
+	@media screen and (max-width: 768px) {
+		align-items: center;
+	}
 `;
 
 //---------------logo styles START--------------
@@ -66,13 +67,13 @@ const MobileIcon = styled.div`
 	display: none;
 	@media screen and (max-width: 768px) {
 		display: block;
-		position: absolute;
-		top: 0;
-		right: 0;
-		transform: translate(-100%, 60%);
 		font-size: 1.5rem;
 		cursor: pointer;
 		color: ${({ theme }) => theme.text_primary};
+		transition: transform 0.3s;
+		&.open {
+			transform: rotate(90deg);
+		}
 	}
 `;
 
@@ -157,7 +158,7 @@ const MobileMenuLinks = styled.div`
 	z-index: 1;
 	transition: opacity 0.5s, visibility 0.5s;
 	animation: ${({ open }) =>
-		open ? "navAnimateOpen 0.5s forwards" : "navAnimateClose 0.5s forwards"};
+		open ? "navAnimateOpen 0.5s" : "navAnimateClose 0.5s"};
 	GithubButton {
 		margin-right: 10px;
 	}
@@ -231,12 +232,12 @@ const Navbar = () => {
 						<IoDocument size="2rem" /> <Span>Portfolio</Span>
 					</A>
 				</NavLogo>
-				<MobileIcon ref={mobileIcon}>
-					<FaBars
-						onClick={() => {
-							setOpen(!open);
-						}}
-					/>
+				<MobileIcon ref={mobileIcon} className={open ? "open" : ""}>
+					{!open ? (
+						<FaBars onClick={() => setOpen(true)} />
+					) : (
+						<FaXmark onClick={() => setOpen(false)} />
+					)}
 				</MobileIcon>
 				<NavItems>
 					<NavLink href="#about">About</NavLink>
