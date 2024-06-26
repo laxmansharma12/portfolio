@@ -63,7 +63,7 @@ const Span = styled.div`
 //---------------logo styles END--------------
 
 //mobile view nav toggle button styles
-const MobileIcon = styled.div`
+const MobileIcon = styled.button`
 	display: none;
 	@media screen and (max-width: 768px) {
 		display: block;
@@ -74,11 +74,9 @@ const MobileIcon = styled.div`
 		&.open {
 			transform: rotate(90deg);
 		}
-		&:active,
-		&:focus {
-			outline: none;
-			background-color: transparent;
-		}
+		outline: none;
+		background-color: transparent;
+		border: none;
 	}
 `;
 
