@@ -14,6 +14,7 @@ import Projects from "./components/Projects";
 import ProjectDetails from "./components/ProjectDetails";
 import ThemeController from "./components/ThemeController/ThemeController";
 import PreLoader from "./components/PreLoader/PreLoader";
+import Scrollbar from "./components/ScrollBar/Scrollbar";
 
 const Body = styled.div`
 	background-color: ${({ theme }) => theme.bg};
@@ -131,6 +132,7 @@ function App() {
 						)}
 					</Body>
 				</BrowserRouter>
+				<Scrollbar />
 			</ThemeProvider>
 		</>
 	);

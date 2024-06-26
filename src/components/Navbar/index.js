@@ -224,10 +224,17 @@ const Navbar = () => {
 		};
 	}, []);
 
+	const scrollToTop = () => {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	};
+
 	return (
 		<Nav>
 			<NavContainer>
-				<NavLogo to="/">
+				<NavLogo onClick={() => scrollToTop()}>
 					<A>
 						<IoDocument size="2rem" /> <Span>Portfolio</Span>
 					</A>
